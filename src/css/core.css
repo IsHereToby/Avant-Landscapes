@@ -1,0 +1,187 @@
+:root {
+  --c1: #fff; /* White*/
+  --c2: #000; /*Black */
+  --c3: #181818; /* Greyish Black */
+  --c4: #f2f2f2; /*Grey */
+  --c5: #fafbfc; /* Light *Grey */
+  --c6: #ddf9eb; /* Light Green*/
+  --c7: #5cff85; /* Middle Green*/
+  --c8: #38cc80; /*Darker Green */
+  --c9: #032c26; /* Darkest Green */
+  --c10: #fee21b; /* Light Yellow */
+
+  --primary: #38cc80;
+  --primaryLight: #ffba43;
+  --secondary: #ffba43;
+  --secondaryLight: #ffba43;
+  --headerColor: #1a1a1a;
+  --bodyTextColorWhite: #fafbcc;
+
+  /* 10px was max 1.25rem */
+  --bodyFontSize: clamp(1rem, 2vw, 1rem);
+
+  /* 13px - 16px */
+  --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
+
+  /* 31px - 49px */
+  --headerFontSize: clamp(1.9375rem, 4.4vw, 3.8125rem);
+
+  /* 60px - 100px top and bottom */
+  --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
+}
+@font-face {
+  font-display: swap;
+  font-style: normal;
+  font-family: "Shabrina";
+  src: url(../assets/fonts/Shabrina.otf);
+}
+@font-face {
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+  font-family: "Open-Sans-Reg";
+  src: url("../assets/fonts/Open-Sans-Reg.woff2") format("woff2");
+}
+@font-face {
+  font-weight: 800;
+  font-display: swap;
+  font-style: normal;
+  font-family: "Open-Sans-Weight";
+  src: url("../assets/fonts/Open-Sans-Weight.woff2") format("woff2");
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+.cs-li-link {
+  cursor: pointer;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+.cs-topper {
+  display: block;
+  font-weight: 700;
+  line-height: 1.2em;
+  text-align: inherit;
+  letter-spacing: 0.3em;
+  color: var(--primary);
+  margin-bottom: 0.25rem;
+  padding-bottom: 0.25rem;
+  text-transform: uppercase;
+  font-size: var(--topperFontSize);
+  font-family: "Open-Sans-Weight", Impact, sans-serif;
+}
+.cs-title {
+  font-weight: 900;
+  color: var(--c2);
+  line-height: 1.2em;
+  margin: 0 0 1rem 0;
+  position: relative;
+  text-align: inherit;
+  max-width: 43.75rem;
+  letter-spacing: 3px;
+  font-family: "Shabrina";
+  font-size: var(--headerFontSize);
+}
+.cs-h3 {
+  font-family: "Open-Sans-Weight", Impact, sans-serif;
+}
+.cs-text {
+  margin: 0;
+  width: 100%;
+  line-height: 1.5em;
+  text-align: inherit;
+  max-width: 40.625rem;
+  letter-spacing: 1px;
+  color: var(--bodyTextColor);
+  font-size: var(--bodyFontSize);
+  font-family: "Open-Sans-Reg", Helvetica, sans-serif;
+}
+.cs-li,
+.cs-item-text {
+  font-family: "Open-Sans-Reg", Helvetica, sans-serif;
+}
+.cs-button-6 {
+  z-index: 1;
+  color: #fff;
+  gap: 1.5rem;
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: center;
+  position: relative;
+  min-width: 10.875rem;
+  display: inline-flex;
+  align-items: stretch;
+  text-decoration: none;
+  padding: 0 0 0 1.5rem;
+  box-sizing: border-box;
+  transition: color 0.3s;
+  text-transform: uppercase;
+  background-color: #1a1a1a;
+  border: 2px solid var(--c1);
+  justify-content: space-between;
+  line-height: clamp(2.875rem, 8vw, 1.5rem);
+  font-family: "Open-Sans-Reg", Helvetica, sans-serif;
+}
+.cs-button-6 .cs-wrapper {
+  z-index: 1;
+  height: auto;
+  display: flex;
+  width: 2.75rem;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+.cs-button-6 .cs-wrapper:before {
+  right: 0;
+  bottom: 0;
+  opacity: 1;
+  content: "";
+  width: 100%;
+  z-index: -1;
+  height: 100%;
+  display: block;
+  position: absolute;
+  background: var(--c7);
+  transition: width 0.3s;
+}
+.cs-button-6 .cs-icon {
+  height: auto;
+  width: 1.5rem;
+}
+.cs-button-6:hover {
+  color: #fff;
+}
+.cs-button-6:hover .cs-wrapper:before {
+  width: 0%;
+}
+.shape-divider-top {
+  top: 0;
+  left: 0;
+  width: 100%;
+  line-height: 0;
+  max-width: 63.255rem;
+}
+.shape-divider-top svg {
+  height: 90px;
+  display: block;
+  position: relative;
+  width: calc(150% + 1.3px);
+}
+.shape-divider-top .shape-fill {
+  fill: #ddf9eb;
+}
+
+/* Top SVG Wave Shape Divider 
+<div class="shape-divider-top">
+<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+<path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+</svg>
+</div>
+*/

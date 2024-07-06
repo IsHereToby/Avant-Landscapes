@@ -1,0 +1,272 @@
+/* Banner Section */
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #banner-712 {
+        z-index: 1;
+        position: relative;
+        padding: clamp(10.9375rem, 10vw, 12.5rem) 1rem 6.25rem;
+    }
+    #banner-712 .cs-container {
+        gap: 1rem;
+        width: 100%;
+        margin: auto;
+        display: flex;
+        max-width: 80rem;
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    #banner-712 .cs-int-title {
+        margin: 0;
+        font-weight: 900;
+        line-height: 1.2em;
+        position: relative;
+        text-align: inherit;
+        font-family: "Shabrina";
+        color: var(--bodyTextColorWhite);
+        font-size: clamp(2.4375rem, 6.4vw, 3.8125rem);
+    }
+    #banner-712 .cs-background {
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: -1;
+        height: 100%;
+        display: block;
+        position: absolute;
+    }
+    #banner-712 .cs-background:before {
+        /* background color overlay */
+        top: 0;
+        left: 0;
+        z-index: 1;
+        content: "";
+        width: 100%;
+        height: 100%;
+        opacity: 0.75;
+        display: block;
+        background: #000;
+        position: absolute;
+    }
+    #banner-712 .cs-background img {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+    }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+    #banner-712 .cs-background:before {
+        opacity: 1;
+        background: linear-gradient(
+        90.01deg,
+        rgba(0, 0, 0, 0.9) 16.86%,
+        rgba(0, 0, 0, 0) 100%
+        );
+    }
+}
+/* Lawn Care Section */
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    html {
+        scroll-behavior: smooth;
+    }
+    #content-page {
+        z-index: 1;
+        overflow: hidden;
+        position: relative;
+        background-color: #FFF;
+        padding: var(--sectionPadding);
+        padding-bottom: 1rem;
+        font-family: 'Roboto', 'Arial', sans-serif;
+    }
+    #content-page .cs-container {
+        width: 100%;
+        margin: auto;
+        display: flex;
+        max-width: 80rem;
+        position: relative;
+        align-items: center;
+        flex-direction: column;
+        gap: clamp(3rem, 6vw, 4rem);
+    }
+    #content-page .cs-content {
+        width: 100%;
+        display: flex;
+        text-align: left;
+        max-width: 39.375rem;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #content-page .cs-title {
+        width: 100%;
+        max-width: 100%;
+        font-weight: 900;
+        line-height: 1.2em;
+        margin: 0 0 1rem 0;
+        position: relative;
+        text-align: inherit;
+        color: var(--headerColor);
+        font-size: var(--headerFontSize);
+    }
+    #content-page h2,
+    #content-page h3,
+    #content-page h4,
+    #content-page h5,
+    #content-page h6 {
+        font-weight: 700;
+        text-align: inherit;
+        margin: 0 0 1rem 0;
+        color: var(--headerColor);
+    }
+    #content-page h2 {
+        font-size: 2rem;
+        margin-top: 2rem;
+    }
+    #content-page h3 {
+        font-size: 1.5rem;
+        color: var(--c2);
+    }
+    #content-page h4,
+    #content-page h5,
+    #content-page h6 {
+        font-size: 1.25rem;
+    }
+    #content-page .cs-no-margin {
+        margin: 0;
+    }
+    #content-page .cs-color {
+        color: var(--c7);
+    }
+    #content-page p {
+        width: 100%;
+        line-height: 1.5em;
+        margin: 0 0 1rem 0;
+        text-align: inherit;
+        color: var(--bodyTextColor);
+        font-size: var(--bodyFontSize);
+    }
+    #content-page p:last-of-type {
+        margin-bottom: 2rem;
+    }
+    #content-page p a {
+        font-size: inherit;
+        line-height: inherit;
+        color: var(--primary);
+        text-decoration: underline;
+    }
+    #content-page ol,
+    #content-page ul {
+        gap: 1rem;
+        display: flex;
+        margin: 0 0 2rem 0;
+        padding-left: 1.5rem;
+        flex-direction: column;
+        color: var(--bodyTextColor);
+    }
+    #content-page ul,
+    #content-page ol {
+        margin-top: 1rem;
+    }
+    #content-page ul li,
+    #content-page ol li {
+        font-size: 1rem;
+        list-style: none;
+        color: inherit;
+        position: relative;
+    }
+    #content-page ul li:before,
+    #content-page ol li:before {
+        /* custom list */
+        width: 9px;
+        opacity: 1;
+        content: '';
+        height: 9px;
+        top: 0.325rem;
+        display: block;
+        left: -1.5rem;
+        border-radius: 50%;
+        position: absolute;
+        background: var(--c5);
+    }
+    #content-page img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    #content-page .cs-image-group {
+        width: 50%;
+        gap: 1.25rem;
+        display: none;
+        position: relative;
+        max-width: 33.875rem;
+        flex-direction: column;
+    }
+    #content-page .cs-picture {
+        width: 100%;
+        display: block;
+        overflow: hidden;
+        position: relative;
+        box-sizing: border-box;
+        height: clamp(18.75rem, 40vw, 32.5rem);
+        box-shadow: 0px 3.3478px 50.2169px rgba(0, 0, 0, 0.16);
+        border-radius: clamp(7.8125rem, 15vw, 12.5rem) 0 clamp(7.8125rem, 15vw, 12.5rem) 0;
+    }
+    #content-page .cs-picture img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+    #content-page .cs-container {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    #content-page .cs-content {
+        flex: none;
+        width: 60%;
+    }
+    #content-page .cs-image-group {
+        display: flex;
+    }
+}
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+    body.dark-mode #banner-712{
+        background-color: var(--sdark);
+    }
+    body.dark-mode #content-page {
+        background-color: var(--dark);
+    }
+    body.dark-mode #content-page .cs-title,
+    body.dark-mode #content-page .cs-text,
+    body.dark-mode #content-page h2,
+    body.dark-mode #content-page h3,
+    body.dark-mode #content-page h4,
+    body.dark-mode #content-page h5,
+    body.dark-mode #content-page h6,
+    body.dark-mode #content-page li,
+    body.dark-mode #content-page p {
+        color: var(--bodyTextColorWhite);
+    }
+    body.dark-mode #content-page .cs-color,
+    body.dark-mode #content-page h2,
+    body.dark-mode #content-page h3 {
+        color: var(--c7);
+    }
+    body.dark-mode #content-page .cs-picture {
+        border-color: var(--sdark);
+        background-color: var(--sdark);
+    }
+    body.dark-mode #cs-footer-272 .cs-nav-link:before {
+        /* underline */
+        background: var(--c6);
+    }
+}

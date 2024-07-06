@@ -1,0 +1,768 @@
+/* Banner Section */
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #banner-712 {
+        z-index: 1;
+        position: relative;
+        padding: clamp(10.9375rem, 10vw, 12.5rem) 1rem 6.25rem;
+    }
+    #banner-712 .cs-container {
+        gap: 1rem;
+        width: 100%;
+        margin: auto;
+        display: flex;
+        max-width: 80rem;
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    #banner-712 .cs-int-title {
+        margin: 0;
+        font-weight: 900;
+        line-height: 1.2em;
+        position: relative;
+        text-align: inherit;
+        font-family: "Shabrina";
+        color: var(--bodyTextColorWhite);
+        font-size: clamp(2.4375rem, 6.4vw, 3.8125rem);
+    }
+    #banner-712 .cs-background {
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: -1;
+        height: 100%;
+        display: block;
+        position: absolute;
+    }
+    #banner-712 .cs-background:before {
+        /* background color overlay */
+        top: 0;
+        left: 0;
+        z-index: 1;
+        content: "";
+        width: 100%;
+        height: 100%;
+        opacity: 0.75;
+        display: block;
+        background: #000;
+        position: absolute;
+    }
+    #banner-712 .cs-background img {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+    }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+    #banner-712 .cs-background:before {
+        opacity: 1;
+        background: linear-gradient(
+        90.01deg,
+        rgba(0, 0, 0, 0.9) 16.86%,
+        rgba(0, 0, 0, 0) 100%
+        );
+    }
+}
+/* About Us Section */
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #sbs-311 {
+        overflow: hidden;
+        background-color: var(--c6);
+        padding: var(--sectionPadding);
+    }
+    #sbs-311 .cs-container {
+        width: 100%;
+        margin: auto;
+        display: flex;
+        max-width: 80rem;
+        align-items: center;
+        flex-direction: column;
+        gap: clamp(3rem, 6vw, 4rem);
+    }
+    #sbs-311 .cs-content {
+        width: 100%;
+        display: flex;
+        text-align: left;
+        max-width: 33.875rem;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #sbs-311 .cs-text {
+        margin-bottom: 1rem;
+    }
+    #sbs-311 .cs-text:last-of-type {
+        margin-bottom: 2rem;
+    }
+    #sbs-311 .cs-quote {
+        margin: 0 0 2rem 0;
+        position: relative;
+        border-radius: 1rem;
+        background-color: var(--c4);
+        padding: clamp(1rem, 3vw, 2rem);
+    }
+    #sbs-311 .cs-quote-text {
+        color: var(--bodyTextColor);
+        display: block;
+        margin: 0 0 1rem;
+        line-height: 1.5em;
+        font-size: clamp(0.875rem, 1.5vw, 1rem);
+        font-family: "Open-Sans-Reg", Arial, sans-serif;
+    }
+    #sbs-311 .cs-name {
+        display: block;
+        font-size: 1rem;
+        font-weight: bold;
+        line-height: 1.2em;
+        margin: 0 0 0.25rem;
+        text-transform: uppercase;
+        color: var(--headerColor);
+        font-family: "Open-Sans-Weight", Impact, sans-serif;
+    }
+    #sbs-311 .cs-job {
+        display: block;
+        color: var(--c2);
+        line-height: 1.5em;
+        font-size: 0.875rem;
+        font-family: "Open-Sans-Reg", Arial, sans-serif;
+    }
+    #sbs-311 .cs-quote-icon {
+        height: auto;
+        bottom: 0rem;
+        position: absolute;
+        right: clamp(1rem, 4vw, 2rem);
+        width: clamp(3.75rem, 10vw, 8.5rem);
+    }
+    #sbs-311 .cs-image-group {
+        height: 39.75em;
+        width: 39.4375em;
+        position: relative;
+        font-size: min(2.31vw, 0.7em);
+    }
+    #sbs-311 .cs-picture {
+        display: block;
+        overflow: hidden;
+        position: absolute;
+        border-radius: 1.5em;
+    }
+    #sbs-311 .cs-picture img {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+    }
+    #sbs-311 .cs-picture1 {
+        top: 0;
+        left: 0;
+        width: 32.625em;
+        height: 36.3125em;
+    }
+    #sbs-311 .cs-picture2 {
+        right: 0;
+        bottom: 0;
+        height: 25em;
+        width: 25.875em;
+        background-color: #FFF;
+        border: clamp(0.375em, 1.5vw, 0.75em) solid var(--c6);
+    }
+    body.dark-mode #sbs-311 .cs-picture2 {
+        border: clamp(0.375em, 1.5vw, 0.75em) solid var(--ldark);
+    }
+    #sbs-311 .circle-01 {
+        top: 70%;
+        left: 25%;
+        z-index: 0;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        position: absolute;
+        background-color: var(--c8);
+        transform: translate(-50%, -50%); 
+        animation: floatUpDown 5s infinite ease-in-out;
+    }
+    @keyframes floatUpDown {
+        0%, 100% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-20px);
+        }
+    }
+}
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+    #sbs-311 .cs-container {
+        gap: 3.25rem;
+        flex-flow: row;
+        justify-content: space-between;
+    }
+    #sbs-311 .cs-image-group {
+        flex: none;
+        font-size: min(1.2vw, 1em);
+    }
+    #sbs-311 .cs-content {
+        margin: 0;
+    }
+}
+/* Stats Section */
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #stats-472 {
+        z-index: 1;
+        overflow: hidden;
+        position: relative;
+        background-color: var(--c1);
+        padding: var(--sectionPadding);
+        padding-top: 2rem;
+        background-color: var(--c6);
+    }
+    #stats-472 .cs-container {
+        width: 100%;
+        margin: auto;
+        max-width: 43.75rem;
+    }
+    #stats-472 .cs-card-group {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 3.75rem;
+        justify-content: center;
+    }
+    #stats-472 .cs-item {
+        margin: 0;
+        width: 47%;
+        display: flex;
+        list-style: none;
+        max-width: 15rem;
+        padding: 0 0.75rem;
+        align-items: center;
+        box-sizing: border-box;
+        flex-direction: column;
+    }
+    #stats-472 .cs-number {
+        font-weight: 400;
+        line-height: 1.2em;
+        text-align: center;
+        margin: 0 0 0.25rem 0;
+        color: var(--bodyTextColor);
+        font-size: clamp(1.9375rem, 4.3vw, 3.8125rem);
+        font-family: "Open-Sans-Weight", Impact, sans-serif;
+    }
+    #stats-472 .cs-desc {
+        width: 100%;
+        line-height: 1.5em;
+        text-align: center;
+        color: var(--bodyTextColor);
+        font-size: clamp(1rem, 2vw, 1.15rem);
+        font-family: "Open-Sans-Reg", Arial, sans-serif;
+    }
+    #stats-472 .cs-wave {
+        /* Stretch shape divider wider than the VP */
+        left: 50%;
+        bottom: 0;
+        width: 320%;
+        z-index: -1;
+        height: auto;
+        display: block;
+        position: absolute;
+        transform: translate(-50%);
+      }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+    #stats-472:after {
+        left: auto;
+        display: block;
+        top: 3.5625rem;
+        right: -17.5625rem;
+    }
+    #stats-472 .cs-container {
+        max-width: 80rem;
+    }
+    #stats-472 .cs-card-group {
+        gap: 1rem;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+    #stats-472 .cs-wave {
+        left: 0;
+        width: 100%;
+        transform: none;
+      }
+}
+/* Reviews Section */
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #reviews-1672 {
+        padding: var(--sectionPadding);
+    }
+    #reviews-1672 .cs-container {
+        width: 100%;
+        margin: auto;
+        display: flex;
+        max-width: 80rem;
+        align-items: center;
+        flex-direction: column;
+        gap: clamp(2.5rem, 4.5vw, 4rem);
+    }
+    #reviews-1672 .cs-content {
+        width: 100%;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    #reviews-1672 .cs-title {
+        margin: 0rem;
+    }
+    #reviews-1672 .cs-card-group {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        display: grid;
+        gap: clamp(1rem, 2.5vw, 1.25rem);
+        grid-template-columns: repeat(12, 1fr);
+    }
+    #reviews-1672 .cs-item {
+        width: 100%;
+        display: flex;
+        list-style: none;
+        position: relative;
+        grid-column: span 12;
+        box-sizing: border-box;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        border-radius: 1.25rem;
+        background-color: var(--c4);
+        gap: clamp(1.5rem, 4vw, 3rem);
+        padding: clamp(1.25rem, 3.15vw, 2.5rem) clamp(1.25rem, 3.15vw, 2.5rem);
+    }
+    #reviews-1672 .cs-flex-group {
+        margin-top: auto;
+        display: flex;
+        align-items: flex-start;
+        gap: 0.75rem;
+    }
+    #reviews-1672 .cs-profile {
+        height: auto;
+        width: 3.25rem;
+        display: block;
+        border-radius: 50%;
+        position: relative;
+    }
+    #reviews-1672 .cs-profile img {
+        top: 0;
+        left: 0;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+    }
+    #reviews-1672 .cs-name {
+        margin: 0;
+        display: block;
+        font-weight: 700;
+        margin-top: auto;
+        font-size: 1.25rem;
+        line-height: 1.2em;
+        color: var(--headerColor);
+        font-family: "Open-Sans-Weight", Impact, sans-serif;
+    }
+    #reviews-1672 .cs-job {
+        margin: 0;
+        display: block;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5em;
+        color: var(--bodyTextColor);
+        font-family: "Open-Sans-Reg", Arial, sans-serif;
+    }
+    #reviews-1672 .wrapper {
+        gap: 1rem;
+        display: flex;
+        flex-direction: column;
+    }
+    #reviews-1672 .cs-item-stars {
+        height: auto;
+        width: 6.75rem;
+    }
+    #reviews-1672 .cs-review {
+        margin: 0;
+        z-index: 1;
+        line-height: 1.5em;
+        color: var(--bodyTextColor);
+        font-size: clamp(0.875rem, 1.6vw, 1.25rem);
+        font-family: "Open-Sans-Reg", Arial, sans-serif;
+    }
+    #reviews-1672 .cs-quote {
+        z-index: 0;
+        right: 0rem;
+        height: auto;
+        bottom: 0rem;
+        width: 5.375rem;
+        position: absolute;
+    }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+    #reviews-1672 .cs-item {
+        grid-column: span 4;
+    }
+}
+/* Gallery Section */
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #gallery-1446 {
+        background-color: var(--c4);
+        padding: var(--sectionPadding);
+    }
+    #gallery-1446 .cs-container {
+        width: 100%;
+        max-width: 80rem;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* 48px - 64px */
+        gap: clamp(3rem, 6vw, 4rem);
+        position: relative;
+    }
+    #gallery-1446 .cs-content {
+        text-align: left;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+        gap: 1.5rem;
+    }
+    #gallery-1446 .cs-title {
+        margin: 0;
+    }
+    #gallery-1446 .cs-gallery {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(19.0625rem, 1fr));
+        /* 16px - 20px */
+        gap: clamp(1rem, 1.5vw, 1.25rem);
+        position: relative;
+    }
+    #gallery-1446 .cs-image {
+        /* 260px - 360px */
+        min-height: clamp(16.25rem, 60vw, 20rem);
+        border-radius: 1rem;
+        /* clips the image corners */
+        overflow: hidden;
+        display: block;
+        position: relative;
+    }
+    #gallery-1446 .cs-image img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        /* makes it act like a background image */
+        object-fit: cover;
+    }
+}
+/* Final CTA Section */
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #cta-403 {
+        padding: var(--sectionPadding);
+        position: relative;
+    }
+    #cta-403 .cs-background {
+        width: 100%;
+        height: 100%;
+        background-blend-mode: multiply;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+    #cta-403 .cs-background:before {
+        /* background color overlay */
+        content: "";
+        position: absolute;
+        display: block;
+        height: 100%;
+        width: 100%;
+        background: #1a1a1a;
+        opacity: 0.8;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+    #cta-403 .cs-background img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        /* Makes img tag act as a background image */
+        object-fit: cover;
+        /* positions the image inside the parent */
+        object-position: 0% 30%;
+    }
+    #cta-403 .cs-container {
+        width: 100%;
+        max-width: 80rem;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* 48px - 64px */
+        gap: clamp(3rem, 6vw, 4rem);
+    }
+    #cta-403 .cs-content {
+        /* set text align to left if content needs to be left aligned */
+        text-align: center;
+        width: 100%;
+        max-width: 32.3125rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #cta-403 .cs-title,
+    #cta-403 .cs-text {
+        color: var(--bodyTextColorWhite);
+    }
+    #cta-403 .cs-text {
+        opacity: 0.8;
+        margin-bottom: 1rem;
+    }
+    #cta-403 .cs-text:last-of-type {
+        margin-bottom: 2rem;
+    }
+    #cta-403 .cs-button-solid {
+        margin: 0;
+        z-index: 1;
+        color: #000;
+        font-size: 1rem;
+        font-weight: 700;
+        padding: 0 1.5rem;
+        text-align: center;
+        position: relative;
+        min-width: 9.375rem;
+        text-decoration: none;
+        display: inline-block;
+        border-radius: 0.25rem;
+        box-sizing: border-box;
+        background-color: var(--primary);
+        line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+    }
+    #cta-403 .cs-button-solid:before {
+        top: 0;
+        left: 0;
+        width: 0%;
+        opacity: 1;
+        content: "";
+        z-index: -1;
+        height: 100%;
+        background: #000;
+        position: absolute;
+        border-radius: 0.25rem;
+        transition: width 0.3s;
+    }
+    #cta-403 .cs-button-solid:hover:before {
+        width: 100%;
+    }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+    #cta-403 .cs-background {
+        overflow: hidden;
+    }
+    #cta-403 .cs-background:before {
+        width: 40%;
+        opacity: 1;
+    }
+    #cta-403 .cs-background:after {
+        /* black slant */
+        content: "";
+        width: 31.25rem;
+        height: 93.75rem;
+        margin-right: -3.125rem;
+        background: -moz-linear-gradient(
+        left,
+        #1a1a1a 0%,
+        #1a1a1a 57%,
+        rgba(26, 26, 26, 0) 100%
+        );
+        background: -webkit-linear-gradient(
+        left,
+        #1a1a1a 0%,
+        #1a1a1a 57%,
+        rgba(26, 26, 26, 0) 100%
+        );
+        background: linear-gradient(
+        to right,
+        #1a1a1a 0%,
+        #1a1a1a 57%,
+        rgba(26, 26, 26, 0) 100%
+        );
+        top: 50%;
+        opacity: 1;
+        right: 50%;
+        display: block;
+        position: absolute;
+        transform: rotate(10deg) translateY(-50%);
+    }
+    #cta-403 .cs-background img {
+        right: 0;
+        width: 60%;
+        left: auto;
+        object-position: right;
+    }
+    #cta-403 .cs-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    #cta-403 .cs-content {
+        width: 45%;
+        text-align: left;
+        align-items: flex-start;
+    }
+    #cta-403 .cs-text,
+    #cta-403 .cs-title {
+        margin-left: 0;
+    }
+}
+/* Footer Section */
+/* Mobile - 360px - Contains hover state */
+@media only screen and (min-width: 0rem) {
+    #cs-footer-107 {
+        padding: 2.5em 1em;
+        background: var(--c3);
+    }
+    #cs-footer-107 .cs-container {
+        width: 100%;
+        margin: auto;
+        max-width: 80em;
+    }
+    #cs-footer-107 .cs-ul {
+        padding: 0;
+        margin: auto;
+        gap: 1.25rem;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    #cs-footer-107 .cs-li {
+        margin: 0;
+        list-style: none;
+        text-align: center;
+    }
+    #cs-footer-107 .cs-copyright {
+        order: 1;
+        flex: none;
+        color: #FFF;
+        display: block;
+        line-height: 1.5em;
+        margin-top: 1.25rem;
+        font-size: 0.9375rem;
+    }
+    #cs-footer-107 .cs-link {
+        font-weight: 700;
+        color: var(--c6);
+        line-height: 1.5em;
+        position: relative;
+        text-decoration: none;
+        padding-bottom: .35rem;
+        font-size: clamp(0.9375rem, 2vw, 1.0625rem);
+    }
+    #cs-footer-107 .cs-link:hover:before {
+        width: 100%;
+    }
+    #cs-footer-107 .cs-link:before {
+        /* top right box */
+        left: 0;
+        width: 0%;
+        opacity: 1;
+        content: "";
+        display: block;
+        height: 0.1875rem;
+        bottom: -0.125rem;
+        position: absolute;
+        background: var(--c7);
+        transition: width 0.3s;
+    }
+}
+/* Tablet - 700px */
+@media only screen and (min-width: 43.75rem) {
+    #cs-footer-107 .cs-ul {
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: clamp(2.75rem, 7vw, 5.5rem);
+    }
+    #cs-footer-107 .cs-copyright {
+        order: 2;
+        margin: 0 0 0 auto;
+    }
+}
+/* Dark Mode Styles */
+/*About Us Section */
+body.dark-mode #sbs-311{
+    background-color: var(--ldark);
+}
+body.dark-mode #sbs-311 .cs-picture2 {
+    border: clamp(0.375em, 1.5vw, 0.75em) solid var(--ldark);
+}
+body.dark-mode #sbs-311 .cs-quote{
+    background-color: var(--c3);
+}
+/* Font Colors */
+body.dark-mode #sbs-311 .cs-quote-text,
+body.dark-mode #sbs-311 .cs-name{
+    color: var(--c1);
+}
+body.dark-mode #sbs-311 .cs-job{
+    color: var(--c7);
+}
+/* Stats Section */
+body.dark-mode #stats-472{
+    background-color: var(--ldark);
+}
+body.dark-mode #stats-472 .cs-desc{
+    color: var(--c7);
+}
+/* Wave Shape Divider */
+body.dark-mode #stats-472 .cs-wave path {
+    fill: var(--dark);
+  }
+/* Reviews Section */
+body.dark-mode #reviews-1672 .cs-item {
+    background-color: var(--sdark);
+}
+body.dark-mode #reviews-1672 .cs-name{
+    color: var(--c1);
+}
+body.dark-mode #reviews-1672 .cs-job {
+    color: var(--c7);
+}
+body.dark-mode #reviews-16722 .cs-quote {
+    color: var(--c8);
+}
+/* Gallery Section */
+body.dark-mode #gallery-1446 {
+    background-color: var(--ldark);
+    padding: var(--sectionPadding);
+}
+/* Footer Section */
+body.dark-mode #cs-footer-107 {
+    background: var(--dark);
+}

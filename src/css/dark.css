@@ -1,0 +1,158 @@
+/* Mobile */
+@media only screen and (min-width: 0rem) {
+  :root {
+    --dark: #082032;
+    --sdark: #181818;
+    --ldark: #061A28;
+    --medium: #2c394b;
+    --accent: #334756;
+    --bodyTextColorWhite: #FAFBFC;
+
+    --c1: #FFF; /* White*/
+    --c2: #000; /*Black */
+    --c3: #181818; /* Greyish Black */
+    --c4: #F2F2F2; /*Grey */
+    --c5: #FAFBFC; /* Light *Grey */
+    --c6: #DDF9EB; /* Light Green*/
+    --c7: #5CFF85; /* Middle Green*/
+    --c8: #38CC80; /*Darker Green */
+    --c9: #032C26; /* Darkest Green */
+    --c10: #FEE21B; /* Light Yellow */
+  }
+  body.dark-mode {
+    background-color: var(--dark);
+  }
+/*Desktop Navigation Menu Colors */
+/*Navigation Bar Color */
+body.dark-mode #cs-navigation{
+  background-color: var(--dark);
+}
+/* Desktop Drop Down BG Color */
+body.dark-mode #cs-navigation .cs-drop-ul {
+  background-color: var(--medium);
+}
+/* Desktop Menu Wrapper */
+body.dark-mode #cs-navigation .cs-ul-wrapper {
+  background-color: var(--dark);
+}
+/*Desktop Menu Item Font Color */
+body.dark-mode #cs-navigation .cs-li-link {
+  color: var(--c1);
+}
+/* Desktop Drop Down Font Color */
+body.dark-mode #cs-navigation .cs-li-link.cs-drop-link {
+  color: var(--c1);
+}
+/* Desktop Hover Font Color */
+body.dark-mode #cs-navigation .cs-li-link.cs-drop-link:hover {
+  color: var(--c2);
+}
+  body.dark-mode p,
+  body.dark-mode li,
+  body.dark-mode h1,
+  body.dark-mode h2,
+  body.dark-mode h3,
+  body.dark-mode h4,
+  body.dark-mode h5,
+  body.dark-mode h6,
+  body.dark-mode .cs-title,
+  body.dark-mode .cs-text,
+  body.dark-mode .cs-li {
+    color: var(--bodyTextColorWhite);
+  }
+  body.dark-mode .light {
+    display: none;
+  }
+  body.dark-mode .dark {
+    display: block !important;
+  }
+  .dark {
+    /* class used to hide elements that only need to be seen when dark mode is enabled */
+    display: none;
+  }
+}
+/* Dark Mode Toogle */
+/* Mobile */
+@media only screen and (min-width: 0rem) {
+  body.dark-mode #dark-mode-toggle .cs-sun {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+  }
+  body.dark-mode #dark-mode-toggle .cs-moon {
+    transform: translate(-50%, -150%);
+    opacity: 0;
+  }
+  #dark-mode-toggle {
+    top: 50%;
+    padding: 0;
+    width: 3rem;
+    height: 3rem;
+    border: none;
+    display: block;
+    right: 3.75rem;
+    overflow: hidden;
+    position: absolute;
+    background: transparent;
+    transform: translateY(-50%);
+  }
+  #dark-mode-toggle img,
+  #dark-mode-toggle svg {
+    top: 50%;
+    left: 50%;
+    width: 1.5625rem;
+    height: 1.5625rem;
+    position: absolute;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+  }
+  #dark-mode-toggle .cs-moon {
+    z-index: 2;
+    transition: transform 0.3s,
+                opacity 0.3s,
+                fill 0.3s;
+    fill: #000;
+  }
+  #dark-mode-toggle .cs-sun {
+    z-index: 1;
+    transform: translate(-50%, 100%);
+    opacity: 0;
+    transition: transform 0.3s,
+                opacity 0.3s;
+  }
+    /* Menu Item Font Color */
+    body.dark-mode #cs-navigation .cs-li-link {
+      color: var(--c1);
+  }
+  /* Mobile Drop Down BG Color */
+  body.dark-mode #cs-navigation .cs-drop-ul {
+      background-color: var(--medium);
+  }
+  /*Navigation Menu Lines */
+  body.dark-mode #cs-navigation .cs-line{
+      background-color: var(--c1);
+  }
+  /* Mobile Menu Wrapper */
+  body.dark-mode #cs-navigation .cs-ul-wrapper {
+      background-color: var(--dark);
+  }
+  /* Mobile Drop Down Font Color */
+  body.dark-mode #cs-navigation .cs-li-link.cs-drop-link {
+      color: var(--c1);
+  }
+}
+/* Desktop */
+@media only screen and (min-width: 64rem) {
+  #dark-mode-toggle {
+    top: auto;
+    right: auto;
+    transform: none;
+    position: relative;
+    margin-bottom: 0rem;
+    margin-left: 1.875rem;
+  }
+  #dark-mode-toggle .moon {
+
+    fill: #fff;
+  }
+}
+                                
